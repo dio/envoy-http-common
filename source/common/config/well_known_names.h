@@ -15,14 +15,14 @@ public:
 
 typedef ConstSingleton<CustomHttpFilterNameValues> CustomHttpFilterNames;
 
-class CustomHttpFilterMetadataValues {
+class CustomMetadataFilterValues {
   const std::string DECODE = "is.rotiman.http_decoder";
   const std::string ENCODE = "is.rotiman.http_encode";
   const std::string STREAM = "is.rotiman.http_stream";
 }
 
-typedef ConstSingleton<CustomHttpFilterMetadataValues>
-    CustomHttpFilter;
+typedef ConstSingleton<CustomMetadataFilterValues>
+    CustomMetadataFilters;
 
 } // namespace Config
 } // namespace Envoy
